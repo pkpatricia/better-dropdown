@@ -6,122 +6,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
 
     <title>Navbar Template for Bootstrap</title>
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-
-    <!-- Custom styles for this template -->
-    <link href="better-dropdpwn.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="css/better-dropdpwn.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container">
-        <div class="jumbotron">
-            <h1>A better dropdown menu for Bootstrap.</h1>
-            <p>
-                Working on a handful of bootstrap projects, I got really tired of
-                how ugly the main dropdown menu is. Found myself rewriting the same styles 
-                time and time agian, so better-dropdown was born.
-            </p>
-            <p>
-                <a class="btn btn-lg btn-primary" href="#" role="button">View Repo & Download</a>
-            </p>
-        </div>
-
-        <nav class="navbar navbar-default" role="navigation">
-            <div class="container-fluid">
-
-                <!-- Brand and toggle get grouped for better mobile display -->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div class="col-md-8 col-md-offset-2">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">Brand</a>
+                    <a class="navbar-brand" href="#">better-dropdown</a>
                 </div>
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
-                        <li class="dropdown">
-
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Example <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">Action</a></li>
+                            <li><a href="#">@sodevious on twitter</a></li>
                             <li><a href="#">Another action</a></li>
                             <li><a href="#">Something else here</a></li>
                             <li class="divider"></li>
                             <li><a href="#">Separated link</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">One more separated link</a></li>
                         </ul>
-                        </li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="jumbotron">
+                <h1>A better dropdown menu for Bootstrap.</h1>
+                <p>
+                    Working on a handful of bootstrap projects, I got really tired of
+                    how ugly the main dropdown menu is. Found myself rewriting the same styles time and time agian, so better-dropdown was born.          
+                    <small>By <a href="http://twitter.com/sodevious">Nicole Dominguez</a></small>
+                </p>
+                <p>
+                    <a class="btn btn-lg btn-primary" href="https://github.com/sodevious/better-dropdown" role="button">View Repo & Download</a>
+                </p>
+            </div>
+
+            <h2>Example</h2>
+            <ul class="nav nav-pills">
+                <li class="active"><a href="#">Regular link</a></li>
+                <li class="dropdown">
+                    <a id="drop4" role="button" data-toggle="dropdown" href="#">Dropdown <span class="caret"></span></a>
+                    <ul id="menu1" class="dropdown-menu" role="menu" aria-labelledby="drop4">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
                     </ul>
-
-                    <form class="navbar-form navbar-left" role="search">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Search">
-                        </div>
-                        <button type="submit" class="btn btn-default">Submit</button>
-                    </form>
-
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Link</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                            </ul>
-                        </li>
+                </li>
+                <li class="dropdown">
+                    <a id="drop5" role="button" data-toggle="dropdown" href="#">Dropdown 2 <span class="caret"></span></a>
+                    <ul id="menu2" class="dropdown-menu" role="menu" aria-labelledby="drop5">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
                     </ul>
-                    </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
-        </nav>
+                </li>
+                <li class="dropdown">
+                    <a id="drop6" role="button" data-toggle="dropdown" href="#">Dropdown 3 <span class="caret"></span></a>
+                    <ul id="menu3" class="dropdown-menu" role="menu" aria-labelledby="drop6">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation" class="dropdown-header">Dropdown header</li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
 
-        <ul class="nav nav-pills">
-            <li class="active"><a href="#">Regular link</a></li>
-            <li class="dropdown">
-                <a id="drop4" role="button" data-toggle="dropdown" href="#">Dropdown <span class="caret"></span></a>
-                <ul id="menu1" class="dropdown-menu" role="menu" aria-labelledby="drop4">
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a></li>
-                    <li role="presentation" class="divider"></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a id="drop5" role="button" data-toggle="dropdown" href="#">Dropdown 2 <span class="caret"></span></a>
-                <ul id="menu2" class="dropdown-menu" role="menu" aria-labelledby="drop5">
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a></li>
-                    <li role="presentation" class="divider"></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a id="drop6" role="button" data-toggle="dropdown" href="#">Dropdown 3 <span class="caret"></span></a>
-                <ul id="menu3" class="dropdown-menu" role="menu" aria-labelledby="drop6">
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a></li>
-                    <li role="presentation" class="divider"></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
-                </ul>
-            </li>
-        </ul> <!-- /pills -->
+            <br />
+
+            <h2>Usage</h2>
+            <p>
+                Super simple, just download the .css file and include it in your project! .scss source included too.
+            </p>
+            <textarea class="form-control"><link href="css/better-dropdpwn.css" rel="stylesheet"></textarea>
+
+            <br />
+
+            <small class="text-muted">Yes I realize this is uber simple, but :kanyeshrug:</small>
+
+            <br /><br />
+        </div>
     </div>
 
     <!-- Bootstrap core JavaScript

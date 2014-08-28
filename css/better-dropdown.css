@@ -1,0 +1,11 @@
+.dropdown-menu {
+  padding: 0px; }
+  .dropdown-menu > li > a {
+    padding: 10px 15px; }
+  .dropdown-menu > li:last-child > a {
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px; }
+  .dropdown-menu .dropdown-header {
+    padding: 10px 15px 0px 15px; }
+  .dropdown-menu .divider {
+    margin: 0px; }
